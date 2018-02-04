@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.riskfall.detector.Assesment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textpatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Data Patient"
+            android:textColor="@color/putih"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/no_medis"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textpatient"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:hint="Nomor Rekam Medis"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/idperawat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/no_medis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:hint="ID Perawat"
+            android:editable="false"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/idperawat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:hint="Nama Pasien"
+            android:paddingLeft="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/p_age"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_below="@+id/p_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:hint="Tanggal Lahir Pasien"
+                android:padding="2dp"
+                android:editable="false"
+                android:paddingLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/p_gender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/p_age"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:hint="Jenis Kelamin Pasien (L/P)"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/p_diagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/p_gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:hint="Diagnosis"
+            android:paddingLeft="5dp" />
+
+
+        <EditText
+            android:id="@+id/p_class"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/p_diagnosis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:hint="Kelas Pasien"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/p_room"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/p_class"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:hint="Kamar Pasien"
+            android:paddingLeft="5dp" />
+
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_room"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="19dp"
+            android:background="@color/putih"
+            android:text="Start Assessment"
+            android:textColor="@color/tombol" />
+
+    </LinearLayout>
+</ScrollView>

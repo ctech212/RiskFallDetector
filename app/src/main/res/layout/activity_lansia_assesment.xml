@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.riskfall.detector.Lansia_assesment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textpatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Lansia Assessment"
+            android:textColor="@color/putih"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/putih"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Pasien ke Rumah Sakit Karena Jatuh?" />
+
+            <RadioGroup
+                android:id="@+id/soal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal1a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal1b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/abu"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jika Tidak, Apakah Pasien Mengalami Jatuh dalam waktu 2 Bulan Terakhir" />
+
+            <RadioGroup
+                android:id="@+id/soal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal2a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal2b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/putih"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Pasien Delirium?(Tidak Dapat Membuat Keputusan, Pola Pikir Tidak Terorganisir, Gangguan Daya Ingat" />
+
+            <RadioGroup
+                android:id="@+id/soal3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal3a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal3b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/abu"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Pasien Disorientas?(Salah Menyebutkan Waktu, Tempat, Atau Orang" />
+
+            <RadioGroup
+                android:id="@+id/soal4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal4a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal4b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+            android:layout_marginRight="16dp"
+            android:background="@color/putih"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Pasien Mengalami Agitasi?(Ketakutan,Gelisah,Cemas" />
+
+            <RadioGroup
+                android:id="@+id/soal5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal5a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal5b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/abu"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Pasien Memakai Kacamata" />
+
+            <RadioGroup
+                android:id="@+id/soal6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal6a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal6b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l7"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/putih"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Pasien Mengeluh Adanya Penglihatan Buram?" />
+
+            <RadioGroup
+                android:id="@+id/soal7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal7a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal7b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l8"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/abu"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Pasien Mempunyai Glaucoma, Katarak, Atau Degenerasi Makula" />
+
+            <RadioGroup
+                android:id="@+id/soal8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal8a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal8b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/putih"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah Terdapat Perubahan Perilaku Berkemih?(Frekuensi,Urgensi,Inkontinensia,Nokturia)" />
+
+            <RadioGroup
+                android:id="@+id/soal9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal9a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+
+                <RadioButton
+                    android:id="@+id/soal9b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/abu"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transfer(Dari Tempat Tidur ke Kursi dan Kembali ke Tempat Tidur"/>
+
+            <RadioGroup
+                android:id="@+id/soal10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal10a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mandiri(Boleh Menggunakan Alat Bantu Jalan"/>
+
+                <RadioButton
+                    android:id="@+id/soal10b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Membutuhkan Sedikit Bantuan(1 Orang)/Dalam Pengawasa"/>
+
+                <RadioButton
+                    android:id="@+id/soal10c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Membutuhkan Bantuan yang Nyata(2 Orang)"/>
+
+                <RadioButton
+                    android:id="@+id/soal10d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak dapat duduk dengan seimbang, perlu bantuan total"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/putih"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobilitas"/>
+
+            <RadioGroup
+                android:id="@+id/soal11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/soal11a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mandiri(Boleh Menggunakan Alat Bantu)"/>
+
+                <RadioButton
+                    android:id="@+id/soal11b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memerlukan Sedikit Bantuan(1orang)/ Berjalan dengan Bantuan 1 Orang(Verbal/Fisik"/>
+
+                <RadioButton
+                    android:id="@+id/soal11c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Menggunakan Kursi Roda"/>
+
+                <RadioButton
+                    android:id="@+id/soal11d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Imobilisasi"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/putih"
+            android:text="Analyze"
+            android:textColor="@color/tombol"/>
+    </LinearLayout>
+
+
+</ScrollView>

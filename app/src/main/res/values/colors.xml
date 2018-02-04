@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49bdf7</color>
+    <color name="colorPrimaryDark">#110895f9</color>
+    <color name="colorgaris">#49caf9</color>
+    <color name="putih">#ffffff</color>
+    <color name="tombol">#1b82f7</color>
+    <color name="abu">#fcf7ff</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

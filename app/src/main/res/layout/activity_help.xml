@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.riskfall.detector.Help">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/iconrfd"
+            android:layout_marginTop="10dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/icon" />
+        <TextView
+            android:id="@+id/texthelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Petunjuk Penggunaan Assessment Risiko Jatuh"
+            android:textAlignment="center"
+            android:textColor="@color/putih"
+            android:textSize="25dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/putih">
+
+        </View>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Riwayat Jatuh:"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:background="@color/putih"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Jika  pasien  mengalami  kejadian  jatuh  saat  masuk  rumah  sakit  atau  terdapat  riwayat  kejadian
+"
+            android:background="@color/putih"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis sekunder:"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:background="@color/putih"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Jika pasien memiliki lebih dari satu diagnosis medis, berikan skor 15;  jika tidak, berikan skor 0.
+"
+            android:background="@color/putih"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alat bantu : "
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:background="@color/putih"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/putih"
+            android:text="Jika pasien berpegangan pada perabot untuk berjalan, berikan skor 30. Jika pasien menggunakan tongkat / alat penopang, berikan skor 15. Jika pasien dapat berjalan tanpa alat bantu, berikan skor 0.
+" />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terapi intravena (terpasang infus) :"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:background="@color/putih"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Jika pasien terpasang infus, berikan skor 20; jika tidak, berikan skor 0.
+"
+            android:background="@color/putih"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gaya Berjalan:"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:background="@color/putih"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Jika pasien mengalami gangguan gaya berjalan; mengalami kesulitan untuk bangun dari kursi,  menggunakan  bantalan tangan kursi  untuk mendorong  tubuhnya,  kepala menunduk, pandangan  mata  terfokus  pada  lantai, memerlukan
+ bantuan  sedang  – total untuk  menjaga keseimbangan dengan berpegangan pada perabot, orang,  atau alat bantu berjalan, dan langkah.langkahnya pendek; berikan skor 20. Jika  pasien  memiliki  gaya  berjalan  yang  lemah;  pasien  membungkuk;  tidak  dapat mengangkat  kepala  tanpa  kehilangan  keseimbangan,  atau  memerlukan  bantuan  ringan untuk berjalan; dan langkah-langkahnya pendek; berikan skor 10. Jika pasien memiliki gaya berjalan normal, berikan skor 0.
+
+"
+            android:background="@color/putih"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status mental:"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:background="@color/putih"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Identifikasi  asesmen  pasien  terhadap  dirinya  sendiri  mengenai  kemampuannya  untuk  berjalan. Jika  pasien  mempunyai  over-estimasi  terhadap  kemampuan  fisiknya,  berikan  skor  15.  Jika asesmen pasien sesuai dengan kemampuan sebenarnya, berikan skor 0.
+
+"
+            android:background="@color/putih"/>
+
+    </LinearLayout>
+
+</ScrollView>
